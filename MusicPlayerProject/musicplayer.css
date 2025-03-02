@@ -14,8 +14,9 @@ h2{
 	position:absolute;
 	height: 100%;
 	width: 100%;
-	background-color: #05023b;
+	background-color: #323b02;
 	top: 5%;
+	/* #05023b */
 }
 
 .main-section{
