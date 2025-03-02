@@ -1,0 +1,854 @@
+
+body { 
+	background: #f2f2f2; 
+	
+}
+h2{
+	color: white;
+	font-family: garamond;
+} 
+.hide{
+	display: none; /*This class hides any div that it is applie to*/
+}
+.main-div{
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #05023b;
+	top: 5%;
+}
+
+.main-section{
+	height: 40%;
+	width: 55%;
+	margin-left: 10%;
+	background-color: #05023b;
+	overflow-x: scroll;	
+}
+main::-webkit-scrollbar{
+    display: none;
+  }
+
+.container{
+    width: 95%;
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+   margin: 40px;
+   margin-right: 40px;
+    overflow: hidden;
+    border: 2px solid black;
+    background-color: #05023b;
+	position: relative;
+}
+
+/* ======single artist====== */
+
+.single-artist{
+    position: relative;
+	background-color: #05023b;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+	width: 800px;	
+
+	
+} 
+.single-div img{
+   height: 300px;
+    width: 300px;
+}
+.single-div-two{
+    background-color: #042a75a1;
+    height: 300px;
+    width: 500px;
+    
+}
+.single-div-two h1{
+    color: white;
+  text-align-last: left;
+margin-left: 35px;
+
+margin-top: 12%;
+
+}
+.single-div-two p{
+   color: #ffffff85;
+    margin-left: 35px;
+    text-align: start;
+  word-wrap: break-word;
+ }
+ .button1{
+        border: none;
+        background: linear-gradient(9deg, rgba(21,32,221,1) 0%, rgba(220,9,230,1) 35%);
+        padding: 6px 25px;
+        margin-top: 40px;
+        width: 180px;
+        color: #eceff0;
+        font-size: 16px;
+        margin-left: 35px;
+        cursor: pointer;
+      }
+.button2{
+    background-color: #042a750a;
+    border: none;
+       
+        padding: 6px 25px;
+        margin-top: 40px;
+        width: 180px;
+        color: #eceff0;
+        font-size: 16px;
+        margin-left: 35px;
+        cursor: pointer;
+}
+
+/* end of single singer===================== */
+
+/*=====================  singer  songs list ===============================*/
+.single-list{
+	height:500px;
+	width:100%;
+	margin-top: 2vh;
+	flex-direction: column;
+	padding: 0px;
+	
+	vertical-align: top;
+	background-color: #05023b;
+	overflow-x: scroll;
+	
+}
+aside::-webkit-scrollbar{
+    display: none;
+  }
+
+#single-item{
+	height: 55px;
+	width: 100%;
+	background-color: rgba(43, 38, 38, 0.632);
+	display: flex;
+	
+	margin-top: 0.5vh;
+	border-radius:5px;
+}
+#single-item-img{
+	height: 45px;
+	width: 45px;
+	padding: 1%;
+	margin-top: 0.6vh;
+	margin-left: 0.4vw;
+	background-position: center;
+	background-size: cover;
+	
+	
+	border-radius: 3px;
+}
+#single-title{
+	font-family: sans-serif;
+     color: white;
+	font-size: 0.8rem;
+	margin-top: 18px;
+	margin-left: 8px;
+}
+#single-favourite{
+	margin-left: 45%;
+	margin-top:17px;
+	 color: white;
+	font-size: 1.2rem;
+}
+/*===================== end of singer  songs list ===============================*/
+
+/* =====navigataion section===== */
+* { 
+			margin: 0; 
+			padding: 0; 
+			outline: none; 
+			box-sizing: border-box; 
+			 
+		} 
+		nav { 
+			background: transparent;
+			display: flex; 
+			width: 100%;
+			
+			align-items: center; 
+			justify-content: space-between; 
+			height: 70px; 
+			
+		} 
+/* Styling the logo */ 
+nav .logo { 
+	color: #fff; 
+	margin: 10px;
+	font-size: 30px; 
+	font-weight: 600; 
+	letter-spacing: -1px; 
+	font-family: garamond;
+} 
+nav #logo-image{
+height: 60px;
+width: 60px;
+}
+/* Styling all the nav items as a whole */ 
+		nav .nav-items { 
+			display: flex; 
+			flex: 1; 
+			padding: 0 0 0 100px; 
+		} 
+
+/* Styling the list items in the nav tag */ 
+		nav .nav-items li { 
+			list-style: none; 
+			padding: 0 10px; 
+		} 
+
+/* Styling each list items */ 
+		nav .nav-items li a { 
+			color: #fff; 
+			font-size: 20px; 
+			font-weight: 500; 
+			text-decoration: none; 
+		} 
+/* Setting the hover colour on the list items*/ 
+		nav .nav-items li a:hover { 
+			color: #0bd3fb; 
+		} 
+		
+		 .search-bar {
+			width: 30%;
+			position: relative	;
+		  }
+		  
+		  .search-bar input {
+			font-size: 18px;
+			color: white;
+			width: 300px;
+			height: 30px;
+			text-align: center;
+			border: none;
+			border-radius: 8px;
+			outline: none;
+			padding: 0 30px;
+			background-color: #171373;
+		  }
+		  
+		  .search-ico {
+			position: relative;
+			left: -70%;
+			
+		  }
+		  
+		  .microphone-ico {
+			position: relative;
+			right: 55px;
+		  }
+		  
+      nav .licon li img{ 
+			list-style: none; 
+			display: flex; 
+			border-radius: 50%;
+			
+			
+		} 
+
+		:root{
+			--bg_color_1 : #070130;
+			--bg_color_2: #0d0065;
+			--bg_color_3: #222b5c;
+			--bg_music_bar: #2b2b2a;
+			--font_color_1: white;
+			--font_color_2: lightgrey;
+			--font_color_3 : #1DB954;
+		}
+/* End of navigation ========================================== */
+
+/* ====aside section (similar artist)===========================================*/
+aside{
+	height:100%;
+	width:28%;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 0px;
+	float: inline-end;
+	vertical-align: top;
+	overflow-x: scroll;
+	/*Ensures that aside is displayed right beside main at the top*/
+}
+aside::-webkit-scrollbar{
+    display: none;
+  }
+#aside-header{
+	height: auto;
+	width: 88%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    margin-bottom: 2vh;
+	
+}
+#aside-title{
+	text-decoration: underline;
+	height: auto;
+	width: auto;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+	color: var(--font_color_1);
+	font-weight: bold;
+	display: inline-flex;
+}
+
+#queue-item{
+	height: 80px;
+	width: 320px;
+	background-color: rgb(1, 72, 130,0.5);
+	display: flex;
+	flex-flow:column wrap;
+	margin-top: 1vh;
+	border-radius:5px;
+}
+#queue-item-img{
+	height: 70px;
+	width: 70px;
+	padding: 1%;
+	margin-top: 0.6vh;
+	margin-left: 0.4vw;
+	background-position: center;
+	background-size: cover;
+	color: var(--font_color_1);
+	text-align: center;
+	font-size: 1.3rem;
+	border-radius: 3px;
+}
+#queue-item-title{
+	font-family: sans-serif;
+	color: var(--font_color_1);
+	font-size: 0.8rem;
+	position: relative;
+	top:5vh;
+}
+#queue-favourite{
+	margin-left: 180px;
+	margin-top: -8px;
+	 color: var(--font_color_1);
+	font-size: 1.2rem;
+}
+/*======end of aside section (similar artist)===========================================*/
+
+/*Music Bar===========================================================*/
+#music-bar{
+	height: 100px;
+	width: 95%;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 5px;
+	background-color: var(--bg_music_bar);
+	opacity: 1;
+	z-index: 15;
+	color: var(--font_color_1);
+	
+}
+
+#music-icon{
+	height: 70px;
+	width: 70px;
+	margin-left: 2vw;
+	margin-top: 6px;
+	border:2px solid  var(--font_color_1);;
+	opacity: 1;
+	
+}
+#music-icon img{
+	height: 70px;
+	width: 70px;
+	margin-left: 0;
+	margin-top: 0;
+	position: fixed;
+}
+#music-bar:target{
+	display: block; /*When play button is clicked music bar is displayed*/
+}
+#music-icon a{
+	position: fixed;
+	top:12vh;
+	left:98%;
+	color: var(--font_color_1);
+}
+#music-title{
+	color: var(--font_color_1);
+	font-family: sans-serif;
+	font-size:1rem;
+	margin-top: -3.5%;
+	margin-left: 7.5%;
+}
+#music-player-title-artist{
+	 color:lightgrey; 
+	 font-size:0.8rem;
+}
+#play-buttons{
+	margin-top: -2%;
+    margin-left: 34%;
+    font-size: 1.3rem;
+}
+#play-buttons i{
+	padding-right: 4%;
+}
+#progress-bar{
+	height:3px;
+	width:380px;
+	background-color: var(--font_color_3);
+	margin-left: 460px;
+	margin-top:-1vh;
+	border-radius: 2px;
+}
+#circle{
+	position: relative;
+	top:-6px;
+	left:-1px;
+}
+#favourite{
+	margin-left: 5px;
+	display: inline;
+}
+#remove{
+	margin-left: 5px;
+   display: inline;
+}
+#queue{
+	display: inline;
+	margin-left: 67%;
+	position: relative;
+	bottom: 21%;
+}
+#volume{
+	display: inline;
+	margin-left: 70%;
+	position: relative;
+	bottom: 38%;
+}
+#progress-bar-volume{
+	height:3px;
+	width:10vw;
+	background-color: var(--font_color_3);
+	position: fixed;
+	left: 1100px;
+	top:93.5vh;
+	border-radius: 2px;
+	display: inline;
+}
+
+#circle-volume{
+	position: relative;
+	top:-6px;
+	left:0%;
+}
+#start-time{
+	display: inline;
+	position: absolute;
+	 color: var(--font_color_2);
+	font-family: sans-serif;
+	position: relative;
+	left:28%;
+	top:2.5%;
+	font-size: 0.8rem;
+}
+#end-time{
+	display: inline;
+	position: absolute;
+	 color: var(--font_color_2);
+	font-family: sans-serif;
+	font-size: 0.8rem;
+	position: relative;
+	left:55%;
+	top:2.5%;
+}
+/*End of music bar ======================================================= */
+
+/*Responsiveness*/
+@media only screen and (max-width: 900px){
+	.container{
+		position: relative;
+		width: 100%;
+		margin: 0;
+	}
+	.main-div{
+		position: absolute;
+		width: 100%;
+	}
+	.main-section{
+		width: 60%;
+		margin-left: 12px;
+	}
+	nav{
+	    width: 100%;
+		margin-left: 12px;
+		margin-right: 12px;
+    }
+	nav .logo { 
+		
+		font-size: 25px; 
+		font-weight: 600; 
+		font-family: garamond;
+}
+.search-bar input {
+	position: relative;
+	width: 180px;
+	height: 27px;
+}
+.search-ico {
+	left: -70%;
+}
+aside{
+	margin-right: 12px;
+}
+#music-bar{
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 5px;
+	background-color: var(--bg_music_bar);
+	opacity: 1;
+	
+	color: var(--font_color_1);
+	
+}
+#music-icon{
+	height: 30px;
+	width: 30px;
+	margin-left: 0vw;
+	margin-top: 6px;
+	border:2px solid  var(--font_color_1);;
+	opacity: 1;
+	
+}
+#music-icon img{
+	height: 50px;
+	width: 50px;
+	margin-left: 0;
+	margin-top: 0;
+	position: fixed;
+}
+#music-bar:target{
+	display: block; /*When play button is clicked music bar is displayed*/
+}
+#music-icon a{
+	position: fixed;
+	top:12vh;
+	left:98%;
+	color: var(--font_color_1);
+}
+#music-title{
+	color: var(--font_color_1);
+	font-family: sans-serif;
+	font-size:0.9rem;
+	margin-top: -3.5%;
+	margin-left: 7.5%;
+}
+#music-player-title-artist{
+	 color:lightgrey; 
+	 font-size:0.8rem;
+}
+#play-buttons{
+	margin-top: -2%;
+    margin-left: 34%;
+    font-size: 1.3rem;
+}
+#play-buttons i{
+	padding-right: 4%;
+}
+#progress-bar{
+	height:3px;
+	width:220px;
+	background-color: var(--font_color_3);
+	margin-left: 280px;
+	
+}
+#favourite{
+	margin-left: 5px;
+	display: inline;
+}
+
+#volume{
+	display: inline;
+	margin-left: 70%;
+	position: relative;
+	bottom: 38%;
+}
+#progress-bar-volume{
+	height:3px;
+	width:12vw;
+	background-color: var(--font_color_3);
+	left: 650px;
+	top:92vh;
+	border-radius: 2px;
+	display: inline;
+}
+
+.main-section{
+	
+	width: 65%;
+}
+s
+  
+  .icon {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 36%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+   }
+   
+   #dropdown{
+	position: absolute;
+	right: 0%;
+	right: 20%;
+	top: 0;
+}
+#dropdown-menu{
+	font-family: sans-serif;
+	color: #4b5c5e;
+	margin-top: 10px;
+    font-size: 12px;
+	position: absolute;
+	z-index: 1;
+	display: none;
+    height:0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#dropdown-list{
+    display: none;
+	margin-bottom: 1rem;
+}
+#dropdown-list a{
+	text-decoration: none;
+	color : #eceff0;
+}
+#dropdown:hover #dropdown-menu{
+	height:100px;
+    width: 100px;
+	display: block;
+}
+#dropdown:hover #dropdown-list{
+	display: block;
+}
+
+.popular-artist{
+	background-color: #05023b;
+    height: 200px;
+	width: 100%;	
+	position: relative;
+	
+}
+.popular-div{
+	position: relative;
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+height: 100%;
+width: 100%;
+	background-color: #05023b;
+	
+	
+}
+.popular-art-img{
+	height: 170px;
+	width: 100px;
+	margin-top: 10px;
+	
+}
+
+.popular-art-img img{
+	width: 100px;
+	height: 100px;
+	
+}
+.popular-art-img span h4 {
+	 bottom: 6%;
+	 margin-left: 5px;
+	
+}
+
+
+
+.music-thm-img img{
+	position: relative;
+	border-radius: 50%;
+	opacity: 0.7;
+	width: 90px;
+	height: 90px;
+	
+
+}
+.type-thm-img img{
+	width: 185px;
+	height: 130px;
+	transition: 0.5s all ease-in-out;
+}
+.latest-eng-img img{
+	width: 90px;
+	height: 100px;
+	
+}
+.latest-hnd-img img{
+	width: 90px;
+	height: 100px;
+	
+}}
+@media only screen and (max-width: 500px)   /*500px responsive=======*/
+ {
+	h2{
+		text-decoration: underline;
+	}
+	span{
+		font-size: 15px;
+	}
+	aside{
+		position: absolute;
+		margin-top: 240%;
+		width: 100%;
+		 }
+ #queue-item{
+	      height: 75px;
+			width: 100%;
+			
+		}
+		#single-item{
+			height: 100px;
+			width: 100%;
+			
+		}
+		
+	.main-section{
+		height: 1000px;
+		width: 100%;
+		margin-left: 0%;
+		color: #eceff0;
+	}
+	.single-artist{
+		display: flex;
+		flex-direction: column;
+		height: 600px;
+		width: 100%;
+	}
+	.single-div img{
+		height: 300px;
+		width: 100%;
+	}
+	.single-div-two h1{
+		margin-top: 0px;
+
+	}
+	.container{
+		height: 2400px;
+	}
+	.search-bar input,.microphone-ico,.search-ico {
+		visibility: hidden;
+	}
+	
+	
+	/*music bar==================  */
+	#music-bar{
+		height: 200px;
+		width: 100%;
+		
+	}
+	#music-icon{
+		height: 30px;
+		width: 30px;
+		margin-left: 0vw;
+		margin-top: 10px;
+		border:2px solid  var(--font_color_1);;
+		opacity: 1;
+		
+	}
+	#music-icon img{
+		height: 70px;
+		width: 70px;
+		margin-left: 0;
+		margin-top: 0;
+		position: fixed;
+	}
+	#music-bar:target{
+		display: block; /*When play button is clicked music bar is displayed*/
+	}
+	
+	#music-title{
+		color: var(--font_color_1);
+		font-family: sans-serif;
+		font-size:0.9rem;
+		margin-top: -3.5%;
+		margin-left: 18%;
+	}
+	#music-player-title-artist{
+		 color:lightgrey; 
+		 font-size:0.8rem;
+	}
+	#play-buttons{
+		margin-top: 12%;
+		margin-left: 30%;
+		font-size: 1.3rem;
+	}
+	#play-buttons i{
+		padding-right: 4%;
+		
+	}
+	#progress-bar{
+		
+		height:3px;
+		width:120px;
+		background-color: var(--font_color_3);
+		margin-left: 170px;
+		
+	}
+	#favourite{
+		margin-left: 10px;
+		display: inline;
+	}
+	
+	#volume{
+		display: inline;
+		margin-left: 20%;
+		position: relative;
+		bottom: 0%;
+	}
+	#progress-bar-volume{
+		
+		height:3px;
+		width:25vw;
+		background-color: var(--font_color_3);
+		left: 383px;
+		transform: rotate(-90deg);
+		top:83vh;
+		border-radius: 2px;
+		display: inline;
+	}
+	.grow img{
+		position: relative;
+		height: 150px;
+		width: 150px;
+	   transition: 0.5s;
+		background-color: rgba(0, 0, 0, 0.4);
+		
+	}
+	.icon {
+		color: white;
+		font-size: 30px;
+		position: absolute;
+		margin-top: 10px;
+		left: 14%;
+		transform: translate(-50%, -50%);
+	   }
+
+	   /* Single artist header=================== */
+	   
+	}	   
+	   
+/* End of Responsiveness================================= */
+
+
+ 
