@@ -281,20 +281,27 @@
         </div>
     </section>
     <!-- end of top section -->
-
+   
        <!-- begining of latest release section --> 
     <section class="latest-release">
            <h2> Latest Release</h2>
         
          <div class="latest-div">  
            <div class="latest-rel-img" id="slide_1" style="margin-bottom: -25px;">
-                <img src="images/honeysingh.jpg" alt="" class="latest-img" >
+        <img src="images/honeysingh.jpg" alt="" class="latest-img" id="playButton" >   
+        
+               
                 <span><h4>Kalaa Star</h4> 
                 <p>Oct 15, 2023</p></span>
                 <div class="overlay" id="latest-release-img-button" >
-                    <a href="#music-bar" class="icon" class="font-color"><i class="fa-solid fa-play"></i></a>
-                </div>
+                    <a href="#music-bar" class="icon" class="font-color" ><i class="fa-solid fa-play" id="faplay1" onclick="changeAudio('myAudio1','faplay1')"></i></a>
 
+                    <audio id="myAudio1" >
+                        <source  src="songs/KALAASTAR (2).mp3" type="audio/mp3" >
+                      </audio>
+                    
+                </div>
+                
                 <div id="dropdown">
                   <i class="fa-solid fa-ellipsis fa-lg" style="color: #fcfcfd;"></i>
                      <div id="dropdown-menu" class="hide">
@@ -332,7 +339,12 @@
             <span><h4>Suit Karda</h4>
                 <p>Jan 10, 2023</p></span>
                 <div class="overlay" id="latest-release-img-button" >
-                    <a href="#music-bar" class="icon" class="font-color"><i class="fa-solid fa-play"></i></a>
+                    <a href="#music-bar" class="icon" class="font-color" ><i class="fa-solid fa-play" id="faplay2" onclick="changeAudio('myAudio2','faplay2')"></i></a>
+
+                    <audio id="myAudio2" >
+                        <source src="songs/Suit_Karda.mp3" type="audio/mp3">
+                      </audio>
+
                 </div>
                     <div id="dropdown">
                         <i class="fa-solid fa-ellipsis fa-lg" style="color: #fcfcfd;"></i>
@@ -618,13 +630,26 @@
     <footer>
         <!--The bottom music bar which pops up when we play a music-->
          <div id="music-bar" class="hide">
-             <!--Music Icon-->
-             <div id="music-icon">
+             <!-- Music Icon-->
+              <div id="music-icon">
                   <img src="Images/img33.jpg" alt="music-icon">
-             </div>
+             </div> 
              <!--End of music icon-->
-             <!--Music title-->
-             <div id="music-title">
+            
+
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div><i class="fa-solid fa-play" id="ctrlIcon" ></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+               
+                   
+                <!---start of progress bar-->
+                <input id="progress-bar" type="range" value="0">
+                <!--End of progress bar-->
+
+             <!-- Music title--->
+               <div id="music-title">
                  <b>Brown Rang</b>
                  <div id="favourite">
                     <i class="far fa-heart"></i>
@@ -634,50 +659,14 @@
                  </div>
                  <br/>
                  <artist id="music-player-title-artist">YO YO Honey Singh</artist>
-             </div>
-             <!--End of music title-->
-             <!--Play buttons-->
-             <div id="play-buttons">
-                 <i class="fas fa-random"></i>
-                 <i class="fas fa-backward"></i>
-                 <i class="fas fa-pause-circle"></i>
-                 <i class="fas fa-forward"></i>
-                 <i class="fas fa-undo-alt"></i>
-             </div>
-             <!--End of play buttons-->
-             <!--Music start time-->
-             <div id="start-time">
-                 0:00
-             </div>
-             <!--End of music start time-->
-             <!--Music end time-->
-             <div id="end-time">
-                 5:04
-             </div>
-             <!--End of music end time-->
-             <!--Begining of the progress bar-->
-             <div id="progress-bar">
-                  <div id="circle">
-                      <i class="fas fa-circle"></i>
-                 </div>
-             </div>
-             <!--End of progress bar-->
-             <!--Miscellaneous icons-->
-             <div id="queue">
-                 <i class="fas fa-bars"></i>
-             </div>
-             <div id="volume">
-                 <i class="fas fa-volume-up"></i>
-             </div>
-             <div id="progress-bar-volume">
-                 <div id="circle-volume">
-                   <i class="fas fa-circle"></i>
-                 </div>
-             </div>
-             <!--End of miscellaneous icons-->
+             </div> 
+
+           
+
          </div>
          <!--End of music bar-->
         </footer>
+  
         <!--End of footer section-->
  
    
@@ -685,6 +674,7 @@
 <!--end of main div section-->
 </div>
 <!-- end of container section -->
+ <script src="Script.js"></script>
 </body>
 </html>
 
